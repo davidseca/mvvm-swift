@@ -2,8 +2,8 @@
 //  AccountPresenterTest.swift
 //  MVVMSwiftTests
 //
-//  Created by David Seca on 15.04.20.
-//  Copyright © 2020 David Seca. All rights reserved.
+//  Created by David Seca on 14.07.22.
+//  Copyright (c) 2022 David Seca. All rights reserved.
 //
 
 import XCTest
