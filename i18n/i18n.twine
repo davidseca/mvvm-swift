@@ -1,0 +1,30 @@
+[[Tabbar]]
+    [Tabbar.accounts]
+        en = Accounts
+        es = Cuentas
+
+    [Tabbar.about]
+        en = Info
+        es = Info
+
+[[Accounts]]
+    [Accounts.empty.title]
+        en = No accounts
+        es = No hay cuentas
+
+    [Accounts.ModeControl.all]
+        en = All
+        es = Todas
+
+    [Accounts.ModeControl.visibles]
+        en = Visibles
+        es = Visibles
+
+    [Accounts.Cell.info]
+        en = Number: %@ Balance: %@
+        es = Numero: %@ Saldo: %@
+
+[[About]]
+    [About.content]
+        en = MVPSwift App developed by David Seca
+        es = MVPSwift App desarrollada por David Seca

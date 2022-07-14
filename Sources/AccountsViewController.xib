@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountsViewController" customModule="MVPSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="ekF-rA-LPE" id="cQ9-8n-zpy"/>
+                <outlet property="view" destination="jxG-hR-5UP" id="Bvn-aC-vZY"/>
+                <outlet property="viewModeControl" destination="qHX-eC-7wH" id="frE-Bd-ewc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jxG-hR-5UP">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qHX-eC-7wH">
+                    <rect key="frame" x="141.5" y="44" width="131" height="32"/>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                    </segments>
+                    <connections>
+                        <action selector="viewModeValueChanged:" destination="-1" eventType="valueChanged" id="GYq-A1-GZo"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ekF-rA-LPE">
+                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="qHX-eC-7wH" firstAttribute="centerX" secondItem="oT8-Zl-DXw" secondAttribute="centerX" id="0id-I6-ZHm"/>
+                <constraint firstItem="oT8-Zl-DXw" firstAttribute="trailing" secondItem="ekF-rA-LPE" secondAttribute="trailing" id="8y1-WE-U9G"/>
+                <constraint firstItem="oT8-Zl-DXw" firstAttribute="bottom" secondItem="ekF-rA-LPE" secondAttribute="bottom" id="Gat-W0-qRa"/>
+                <constraint firstItem="ekF-rA-LPE" firstAttribute="leading" secondItem="oT8-Zl-DXw" secondAttribute="leading" id="JKg-eh-zjL"/>
+                <constraint firstItem="qHX-eC-7wH" firstAttribute="top" secondItem="oT8-Zl-DXw" secondAttribute="top" id="cp3-zH-w7K"/>
+                <constraint firstItem="ekF-rA-LPE" firstAttribute="top" secondItem="oT8-Zl-DXw" secondAttribute="top" constant="50" id="nyQ-4H-dZj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="oT8-Zl-DXw"/>
+            <point key="canvasLocation" x="83" y="135"/>
+        </view>
+    </objects>
+</document>
