@@ -1,6 +1,6 @@
 //
 //  MockNetworkManager.swift
-//  MVPSwiftTests
+//  MVVMSwiftTests
 //
 //  Created by David Seca on 15.04.20.
 //  Copyright © 2020 David Seca. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-@testable import MVPSwift
+@testable import MVVMSwift
 
 class MockNetworkManager: NetworkManagerProtocol {
     func getContent(content: Content, completion: @escaping ((Data?, Bool) -> ())) {

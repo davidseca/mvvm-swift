@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController" customModule="MVPSwift" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController" customModule="MVVMSwift" customModuleProvider="target">
             <connections>
                 <outlet property="contentLabel" destination="t0J-VX-xTF" id="9Km-5w-ytJ"/>
                 <outlet property="view" destination="Ca8-kt-4QV" id="NUA-ys-cg6"/>

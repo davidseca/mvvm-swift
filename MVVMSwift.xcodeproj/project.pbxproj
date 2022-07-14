@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		565BA82723D4BF13000D2DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565BA82623D4BF13000D2DEF /* AppDelegate.swift */; };
 		565BA83323D4BF13000D2DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565BA83223D4BF13000D2DEF /* Assets.xcassets */; };
-		565BA84C23D4BF13000D2DEF /* MVPSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565BA84B23D4BF13000D2DEF /* MVPSwiftUITests.swift */; };
+		565BA84C23D4BF13000D2DEF /* MVVMSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565BA84B23D4BF13000D2DEF /* MVVMSwiftUITests.swift */; };
 		565BA85B23D4BFBC000D2DEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 565BA85A23D4BFBC000D2DEF /* LaunchScreen.xib */; };
 		565BA86723D4C399000D2DEF /* i18n.twine in Resources */ = {isa = PBXBuildFile; fileRef = 565BA86623D4C399000D2DEF /* i18n.twine */; };
 		565BA86C23D4C560000D2DEF /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 565BA86A23D4C560000D2DEF /* AboutViewController.xib */; };
@@ -32,9 +32,9 @@
 		56A3198E23D4E7C7001D5D6D /* AcountServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3198D23D4E7C7001D5D6D /* AcountServiceTest.swift */; };
 		56A3199023D4E80D001D5D6D /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3198F23D4E80D001D5D6D /* MockNetworkManager.swift */; };
 		56EB721C23DDAF6600CF9136 /* AccountPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EB721B23DDAF6600CF9136 /* AccountPresenterTest.swift */; };
-		56F8DBC024490E3B00A184E0 /* MVPSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56F8DBBE24490E3A00A184E0 /* MVPSwift.xcdatamodeld */; };
-		AA0F763838980BF0FB9B8FCD /* Pods_MVPSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58579255806DA51FDD83877 /* Pods_MVPSwift.framework */; };
-		BAF66436A688F3277AF34585 /* Pods_MVPSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FED7DC1EA66A8E4BF6590B /* Pods_MVPSwiftTests.framework */; };
+		56F8DBC024490E3B00A184E0 /* MVVMSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56F8DBBE24490E3A00A184E0 /* MVVMSwift.xcdatamodeld */; };
+		AA0F763838980BF0FB9B8FCD /* Pods_MVVMSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58579255806DA51FDD83877 /* Pods_MVVMSwift.framework */; };
+		BAF66436A688F3277AF34585 /* Pods_MVVMSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FED7DC1EA66A8E4BF6590B /* Pods_MVVMSwiftTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,30 +43,30 @@
 			containerPortal = 565BA81B23D4BF12000D2DEF /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 565BA82223D4BF13000D2DEF;
-			remoteInfo = MVPSwift;
+			remoteInfo = MVVMSwift;
 		};
 		565BA84823D4BF13000D2DEF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 565BA81B23D4BF12000D2DEF /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 565BA82223D4BF13000D2DEF;
-			remoteInfo = MVPSwift;
+			remoteInfo = MVVMSwift;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2708CFD55D2B8BD38A3ABF30 /* Pods-MVPSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPSwift.release.xcconfig"; path = "Target Support Files/Pods-MVPSwift/Pods-MVPSwift.release.xcconfig"; sourceTree = "<group>"; };
-		3942AEB36D596106EAE5C78F /* Pods-MVPSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-MVPSwiftTests/Pods-MVPSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
-		3CFBAF39639497ACD2A12CAF /* Pods-MVPSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPSwift.debug.xcconfig"; path = "Target Support Files/Pods-MVPSwift/Pods-MVPSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		5100CD280561B20D6A49115E /* Pods-MVPSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-MVPSwiftTests/Pods-MVPSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
-		565BA82323D4BF13000D2DEF /* MVPSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2708CFD55D2B8BD38A3ABF30 /* Pods-MVVMSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMSwift.release.xcconfig"; path = "Target Support Files/Pods-MVVMSwift/Pods-MVVMSwift.release.xcconfig"; sourceTree = "<group>"; };
+		3942AEB36D596106EAE5C78F /* Pods-MVVMSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-MVVMSwiftTests/Pods-MVVMSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		3CFBAF39639497ACD2A12CAF /* Pods-MVVMSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMSwift.debug.xcconfig"; path = "Target Support Files/Pods-MVVMSwift/Pods-MVVMSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		5100CD280561B20D6A49115E /* Pods-MVVMSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMSwiftTests/Pods-MVVMSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		565BA82323D4BF13000D2DEF /* MVVMSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		565BA82623D4BF13000D2DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		565BA83223D4BF13000D2DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		565BA83723D4BF13000D2DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		565BA83C23D4BF13000D2DEF /* MVPSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		565BA83C23D4BF13000D2DEF /* MVVMSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		565BA84223D4BF13000D2DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		565BA84723D4BF13000D2DEF /* MVPSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		565BA84B23D4BF13000D2DEF /* MVPSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPSwiftUITests.swift; sourceTree = "<group>"; };
+		565BA84723D4BF13000D2DEF /* MVVMSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		565BA84B23D4BF13000D2DEF /* MVVMSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSwiftUITests.swift; sourceTree = "<group>"; };
 		565BA84D23D4BF13000D2DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		565BA85A23D4BFBC000D2DEF /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		565BA86623D4C399000D2DEF /* i18n.twine */ = {isa = PBXFileReference; lastKnownFileType = text; name = i18n.twine; path = i18n/i18n.twine; sourceTree = SOURCE_ROOT; };
@@ -92,9 +92,9 @@
 		56A3198D23D4E7C7001D5D6D /* AcountServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountServiceTest.swift; sourceTree = "<group>"; };
 		56A3198F23D4E80D001D5D6D /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
 		56EB721B23DDAF6600CF9136 /* AccountPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPresenterTest.swift; sourceTree = "<group>"; };
-		56F8DBBF24490E3A00A184E0 /* MVPSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVPSwift.xcdatamodel; sourceTree = "<group>"; };
-		E0FED7DC1EA66A8E4BF6590B /* Pods_MVPSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVPSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E58579255806DA51FDD83877 /* Pods_MVPSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVPSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56F8DBBF24490E3A00A184E0 /* MVVMSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVVMSwift.xcdatamodel; sourceTree = "<group>"; };
+		E0FED7DC1EA66A8E4BF6590B /* Pods_MVVMSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E58579255806DA51FDD83877 /* Pods_MVVMSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA0F763838980BF0FB9B8FCD /* Pods_MVPSwift.framework in Frameworks */,
+				AA0F763838980BF0FB9B8FCD /* Pods_MVVMSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAF66436A688F3277AF34585 /* Pods_MVPSwiftTests.framework in Frameworks */,
+				BAF66436A688F3277AF34585 /* Pods_MVVMSwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,8 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				565BA82523D4BF13000D2DEF /* Sources */,
-				565BA83F23D4BF13000D2DEF /* MVPSwiftTests */,
-				565BA84A23D4BF13000D2DEF /* MVPSwiftUITests */,
+				565BA83F23D4BF13000D2DEF /* MVVMSwiftTests */,
+				565BA84A23D4BF13000D2DEF /* MVVMSwiftUITests */,
 				565BA82423D4BF13000D2DEF /* Products */,
 				C83A4ABB6EC5FC13AF4A46E5 /* Pods */,
 				D4FA5322F2D44EFB00F9EA1C /* Frameworks */,
@@ -139,9 +139,9 @@
 		565BA82423D4BF13000D2DEF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				565BA82323D4BF13000D2DEF /* MVPSwift.app */,
-				565BA83C23D4BF13000D2DEF /* MVPSwiftTests.xctest */,
-				565BA84723D4BF13000D2DEF /* MVPSwiftUITests.xctest */,
+				565BA82323D4BF13000D2DEF /* MVVMSwift.app */,
+				565BA83C23D4BF13000D2DEF /* MVVMSwiftTests.xctest */,
+				565BA84723D4BF13000D2DEF /* MVVMSwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		565BA83F23D4BF13000D2DEF /* MVPSwiftTests */ = {
+		565BA83F23D4BF13000D2DEF /* MVVMSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
 				565BA84223D4BF13000D2DEF /* Info.plist */,
@@ -170,16 +170,16 @@
 				56EB721B23DDAF6600CF9136 /* AccountPresenterTest.swift */,
 				56A3198F23D4E80D001D5D6D /* MockNetworkManager.swift */,
 			);
-			path = MVPSwiftTests;
+			path = MVVMSwiftTests;
 			sourceTree = "<group>";
 		};
-		565BA84A23D4BF13000D2DEF /* MVPSwiftUITests */ = {
+		565BA84A23D4BF13000D2DEF /* MVVMSwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
-				565BA84B23D4BF13000D2DEF /* MVPSwiftUITests.swift */,
+				565BA84B23D4BF13000D2DEF /* MVVMSwiftUITests.swift */,
 				565BA84D23D4BF13000D2DEF /* Info.plist */,
 			);
-			path = MVPSwiftUITests;
+			path = MVVMSwiftUITests;
 			sourceTree = "<group>";
 		};
 		565BA85923D4BF72000D2DEF /* Supporting Files */ = {
@@ -221,7 +221,7 @@
 				567151BD23D7AF5200694436 /* AccountService.swift */,
 				565BA89323D4D50B000D2DEF /* CoreDataManager.swift */,
 				567151CA23D7BE2B00694436 /* Account.swift */,
-				56F8DBBE24490E3A00A184E0 /* MVPSwift.xcdatamodeld */,
+				56F8DBBE24490E3A00A184E0 /* MVVMSwift.xcdatamodeld */,
 			);
 			name = "Data Models & Managers";
 			sourceTree = "<group>";
@@ -248,10 +248,10 @@
 		C83A4ABB6EC5FC13AF4A46E5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3CFBAF39639497ACD2A12CAF /* Pods-MVPSwift.debug.xcconfig */,
-				2708CFD55D2B8BD38A3ABF30 /* Pods-MVPSwift.release.xcconfig */,
-				5100CD280561B20D6A49115E /* Pods-MVPSwiftTests.debug.xcconfig */,
-				3942AEB36D596106EAE5C78F /* Pods-MVPSwiftTests.release.xcconfig */,
+				3CFBAF39639497ACD2A12CAF /* Pods-MVVMSwift.debug.xcconfig */,
+				2708CFD55D2B8BD38A3ABF30 /* Pods-MVVMSwift.release.xcconfig */,
+				5100CD280561B20D6A49115E /* Pods-MVVMSwiftTests.debug.xcconfig */,
+				3942AEB36D596106EAE5C78F /* Pods-MVVMSwiftTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -259,8 +259,8 @@
 		D4FA5322F2D44EFB00F9EA1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E58579255806DA51FDD83877 /* Pods_MVPSwift.framework */,
-				E0FED7DC1EA66A8E4BF6590B /* Pods_MVPSwiftTests.framework */,
+				E58579255806DA51FDD83877 /* Pods_MVVMSwift.framework */,
+				E0FED7DC1EA66A8E4BF6590B /* Pods_MVVMSwiftTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -268,9 +268,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		565BA82223D4BF13000D2DEF /* MVPSwift */ = {
+		565BA82223D4BF13000D2DEF /* MVVMSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 565BA85023D4BF13000D2DEF /* Build configuration list for PBXNativeTarget "MVPSwift" */;
+			buildConfigurationList = 565BA85023D4BF13000D2DEF /* Build configuration list for PBXNativeTarget "MVVMSwift" */;
 			buildPhases = (
 				284A98BEB8580A5C34B6A0C6 /* [CP] Check Pods Manifest.lock */,
 				565BA87D23D4C708000D2DEF /* Run Twine */,
@@ -284,14 +284,14 @@
 			);
 			dependencies = (
 			);
-			name = MVPSwift;
-			productName = MVPSwift;
-			productReference = 565BA82323D4BF13000D2DEF /* MVPSwift.app */;
+			name = MVVMSwift;
+			productName = MVVMSwift;
+			productReference = 565BA82323D4BF13000D2DEF /* MVVMSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		565BA83B23D4BF13000D2DEF /* MVPSwiftTests */ = {
+		565BA83B23D4BF13000D2DEF /* MVVMSwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 565BA85323D4BF13000D2DEF /* Build configuration list for PBXNativeTarget "MVPSwiftTests" */;
+			buildConfigurationList = 565BA85323D4BF13000D2DEF /* Build configuration list for PBXNativeTarget "MVVMSwiftTests" */;
 			buildPhases = (
 				CE947CD7152D259FB42C3D16 /* [CP] Check Pods Manifest.lock */,
 				565BA83823D4BF13000D2DEF /* Sources */,
@@ -304,14 +304,14 @@
 			dependencies = (
 				565BA83E23D4BF13000D2DEF /* PBXTargetDependency */,
 			);
-			name = MVPSwiftTests;
-			productName = MVPSwiftTests;
-			productReference = 565BA83C23D4BF13000D2DEF /* MVPSwiftTests.xctest */;
+			name = MVVMSwiftTests;
+			productName = MVVMSwiftTests;
+			productReference = 565BA83C23D4BF13000D2DEF /* MVVMSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		565BA84623D4BF13000D2DEF /* MVPSwiftUITests */ = {
+		565BA84623D4BF13000D2DEF /* MVVMSwiftUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 565BA85623D4BF13000D2DEF /* Build configuration list for PBXNativeTarget "MVPSwiftUITests" */;
+			buildConfigurationList = 565BA85623D4BF13000D2DEF /* Build configuration list for PBXNativeTarget "MVVMSwiftUITests" */;
 			buildPhases = (
 				565BA84323D4BF13000D2DEF /* Sources */,
 				565BA84423D4BF13000D2DEF /* Frameworks */,
@@ -322,9 +322,9 @@
 			dependencies = (
 				565BA84923D4BF13000D2DEF /* PBXTargetDependency */,
 			);
-			name = MVPSwiftUITests;
-			productName = MVPSwiftUITests;
-			productReference = 565BA84723D4BF13000D2DEF /* MVPSwiftUITests.xctest */;
+			name = MVVMSwiftUITests;
+			productName = MVVMSwiftUITests;
+			productReference = 565BA84723D4BF13000D2DEF /* MVVMSwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -350,7 +350,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 565BA81E23D4BF12000D2DEF /* Build configuration list for PBXProject "MVPSwift" */;
+			buildConfigurationList = 565BA81E23D4BF12000D2DEF /* Build configuration list for PBXProject "MVVMSwift" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -364,9 +364,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				565BA82223D4BF13000D2DEF /* MVPSwift */,
-				565BA83B23D4BF13000D2DEF /* MVPSwiftTests */,
-				565BA84623D4BF13000D2DEF /* MVPSwiftUITests */,
+				565BA82223D4BF13000D2DEF /* MVVMSwift */,
+				565BA83B23D4BF13000D2DEF /* MVVMSwiftTests */,
+				565BA84623D4BF13000D2DEF /* MVVMSwiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -420,7 +420,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MVPSwift-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MVVMSwift-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -433,15 +433,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MVPSwift/Pods-MVPSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MVVMSwift/Pods-MVVMSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MVPSwift/Pods-MVPSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MVVMSwift/Pods-MVVMSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVPSwift/Pods-MVPSwift-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVMSwift/Pods-MVVMSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		565BA87D23D4C708000D2DEF /* Run Twine */ = {
@@ -486,15 +486,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MVPSwiftTests/Pods-MVPSwiftTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MVVMSwiftTests/Pods-MVVMSwiftTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MVPSwiftTests/Pods-MVPSwiftTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MVVMSwiftTests/Pods-MVVMSwiftTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVPSwiftTests/Pods-MVPSwiftTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVMSwiftTests/Pods-MVVMSwiftTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CE947CD7152D259FB42C3D16 /* [CP] Check Pods Manifest.lock */ = {
@@ -512,7 +512,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MVPSwiftTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MVVMSwiftTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -527,7 +527,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				567151CB23D7BE2B00694436 /* Account.swift in Sources */,
-				56F8DBC024490E3B00A184E0 /* MVPSwift.xcdatamodeld in Sources */,
+				56F8DBC024490E3B00A184E0 /* MVVMSwift.xcdatamodeld in Sources */,
 				565BA82723D4BF13000D2DEF /* AppDelegate.swift in Sources */,
 				567151C423D7AFA800694436 /* AccountPresenter.swift in Sources */,
 				565BA88E23D4CB15000D2DEF /* NetworkManager.swift in Sources */,
@@ -556,7 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				565BA84C23D4BF13000D2DEF /* MVPSwiftUITests.swift in Sources */,
+				565BA84C23D4BF13000D2DEF /* MVVMSwiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,12 +565,12 @@
 /* Begin PBXTargetDependency section */
 		565BA83E23D4BF13000D2DEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 565BA82223D4BF13000D2DEF /* MVPSwift */;
+			target = 565BA82223D4BF13000D2DEF /* MVVMSwift */;
 			targetProxy = 565BA83D23D4BF13000D2DEF /* PBXContainerItemProxy */;
 		};
 		565BA84923D4BF13000D2DEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 565BA82223D4BF13000D2DEF /* MVPSwift */;
+			target = 565BA82223D4BF13000D2DEF /* MVVMSwift */;
 			targetProxy = 565BA84823D4BF13000D2DEF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -715,7 +715,7 @@
 		};
 		565BA85123D4BF13000D2DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CFBAF39639497ACD2A12CAF /* Pods-MVPSwift.debug.xcconfig */;
+			baseConfigurationReference = 3CFBAF39639497ACD2A12CAF /* Pods-MVVMSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -734,7 +734,7 @@
 		};
 		565BA85223D4BF13000D2DEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2708CFD55D2B8BD38A3ABF30 /* Pods-MVPSwift.release.xcconfig */;
+			baseConfigurationReference = 2708CFD55D2B8BD38A3ABF30 /* Pods-MVVMSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -753,47 +753,47 @@
 		};
 		565BA85423D4BF13000D2DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5100CD280561B20D6A49115E /* Pods-MVPSwiftTests.debug.xcconfig */;
+			baseConfigurationReference = 5100CD280561B20D6A49115E /* Pods-MVVMSwiftTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GWN9W7L69R;
-				INFOPLIST_FILE = MVPSwiftTests/Info.plist;
+				INFOPLIST_FILE = MVVMSwiftTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = davidseca.MVPSwiftTests;
+				PRODUCT_BUNDLE_IDENTIFIER = davidseca.MVVMSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVPSwift.app/MVPSwift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVMSwift.app/MVVMSwift";
 			};
 			name = Debug;
 		};
 		565BA85523D4BF13000D2DEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3942AEB36D596106EAE5C78F /* Pods-MVPSwiftTests.release.xcconfig */;
+			baseConfigurationReference = 3942AEB36D596106EAE5C78F /* Pods-MVVMSwiftTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GWN9W7L69R;
-				INFOPLIST_FILE = MVPSwiftTests/Info.plist;
+				INFOPLIST_FILE = MVVMSwiftTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = davidseca.MVPSwiftTests;
+				PRODUCT_BUNDLE_IDENTIFIER = davidseca.MVVMSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVPSwift.app/MVPSwift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVMSwift.app/MVVMSwift";
 			};
 			name = Release;
 		};
@@ -803,17 +803,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GWN9W7L69R;
-				INFOPLIST_FILE = MVPSwiftUITests/Info.plist;
+				INFOPLIST_FILE = MVVMSwiftUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = davidseca.MVPSwiftUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = davidseca.MVVMSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MVPSwift;
+				TEST_TARGET_NAME = MVVMSwift;
 			};
 			name = Debug;
 		};
@@ -823,24 +823,24 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GWN9W7L69R;
-				INFOPLIST_FILE = MVPSwiftUITests/Info.plist;
+				INFOPLIST_FILE = MVVMSwiftUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = davidseca.MVPSwiftUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = davidseca.MVVMSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MVPSwift;
+				TEST_TARGET_NAME = MVVMSwift;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		565BA81E23D4BF12000D2DEF /* Build configuration list for PBXProject "MVPSwift" */ = {
+		565BA81E23D4BF12000D2DEF /* Build configuration list for PBXProject "MVVMSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				565BA84E23D4BF13000D2DEF /* Debug */,
@@ -849,7 +849,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		565BA85023D4BF13000D2DEF /* Build configuration list for PBXNativeTarget "MVPSwift" */ = {
+		565BA85023D4BF13000D2DEF /* Build configuration list for PBXNativeTarget "MVVMSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				565BA85123D4BF13000D2DEF /* Debug */,
@@ -858,7 +858,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		565BA85323D4BF13000D2DEF /* Build configuration list for PBXNativeTarget "MVPSwiftTests" */ = {
+		565BA85323D4BF13000D2DEF /* Build configuration list for PBXNativeTarget "MVVMSwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				565BA85423D4BF13000D2DEF /* Debug */,
@@ -867,7 +867,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		565BA85623D4BF13000D2DEF /* Build configuration list for PBXNativeTarget "MVPSwiftUITests" */ = {
+		565BA85623D4BF13000D2DEF /* Build configuration list for PBXNativeTarget "MVVMSwiftUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				565BA85723D4BF13000D2DEF /* Debug */,
@@ -879,13 +879,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		56F8DBBE24490E3A00A184E0 /* MVPSwift.xcdatamodeld */ = {
+		56F8DBBE24490E3A00A184E0 /* MVVMSwift.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				56F8DBBF24490E3A00A184E0 /* MVPSwift.xcdatamodel */,
+				56F8DBBF24490E3A00A184E0 /* MVVMSwift.xcdatamodel */,
 			);
-			currentVersion = 56F8DBBF24490E3A00A184E0 /* MVPSwift.xcdatamodel */;
-			path = MVPSwift.xcdatamodeld;
+			currentVersion = 56F8DBBF24490E3A00A184E0 /* MVVMSwift.xcdatamodel */;
+			path = MVVMSwift.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

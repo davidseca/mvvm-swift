@@ -1,6 +1,6 @@
 //
-//  MVPSwiftUITests.swift
-//  MVPSwiftUITests
+//  MVVMSwiftUITests.swift
+//  MVVMSwiftUITests
 //
 //  Created by David Seca on 15.04.20.
 //  Copyright © 2020 David Seca. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class MVPSwiftUITests: XCTestCase {
+class MVVMSwiftUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

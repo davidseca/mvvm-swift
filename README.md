@@ -1,8 +1,8 @@
-# MVPSwift
+# MVVMSwift
 
 ## Description
 
-MVPSwift is an example iOS App written in Swift about using MVP Pattern on iOS.
+MVVMSwift is an example iOS App written in Swift about using MVP Pattern on iOS.
 
 It includes also a CoreData persistance.
 

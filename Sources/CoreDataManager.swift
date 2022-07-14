@@ -1,6 +1,6 @@
 //
 //  CoreDataManager.swift
-//  MVPSwift
+//  MVVMSwift
 //
 //  Created by David Seca on 15.04.20.
 //  Copyright © 2020 David Seca. All rights reserved.
@@ -21,7 +21,7 @@ public class CoreDataManager {
 
 
     private lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "MVPSwift")
+        let container = NSPersistentContainer(name: "MVVMSwift")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
