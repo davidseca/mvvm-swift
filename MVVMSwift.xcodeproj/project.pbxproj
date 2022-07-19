@@ -29,11 +29,11 @@
 		567151C923D7B42F00694436 /* AccountsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 567151C823D7B42F00694436 /* AccountsViewController.xib */; };
 		567151CB23D7BE2B00694436 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567151CA23D7BE2B00694436 /* Account.swift */; };
 		56A0F1BD2887405700B39BC8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A0F1BC2887405700B39BC8 /* Colors.xcassets */; };
+		56A0F1C02887452300B39BC8 /* MVVMSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56A0F1BE2887452300B39BC8 /* MVVMSwift.xcdatamodeld */; };
 		56A3198C23D4E795001D5D6D /* accounts-test-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 56A3198B23D4E795001D5D6D /* accounts-test-data.json */; };
 		56A3198E23D4E7C7001D5D6D /* AcountServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3198D23D4E7C7001D5D6D /* AcountServiceTest.swift */; };
 		56A3199023D4E80D001D5D6D /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3198F23D4E80D001D5D6D /* MockNetworkManager.swift */; };
 		56EB721C23DDAF6600CF9136 /* AccountPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EB721B23DDAF6600CF9136 /* AccountPresenterTest.swift */; };
-		56F8DBC024490E3B00A184E0 /* MVVMSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56F8DBBE24490E3A00A184E0 /* MVVMSwift.xcdatamodeld */; };
 		AA0F763838980BF0FB9B8FCD /* Pods_MVVMSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58579255806DA51FDD83877 /* Pods_MVVMSwift.framework */; };
 		BAF66436A688F3277AF34585 /* Pods_MVVMSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FED7DC1EA66A8E4BF6590B /* Pods_MVVMSwiftTests.framework */; };
 /* End PBXBuildFile section */
@@ -90,11 +90,11 @@
 		567151C823D7B42F00694436 /* AccountsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountsViewController.xib; sourceTree = "<group>"; };
 		567151CA23D7BE2B00694436 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		56A0F1BC2887405700B39BC8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		56A0F1BF2887452300B39BC8 /* MVPSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVPSwift.xcdatamodel; sourceTree = "<group>"; };
 		56A3198B23D4E795001D5D6D /* accounts-test-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "accounts-test-data.json"; sourceTree = "<group>"; };
 		56A3198D23D4E7C7001D5D6D /* AcountServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountServiceTest.swift; sourceTree = "<group>"; };
 		56A3198F23D4E80D001D5D6D /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
 		56EB721B23DDAF6600CF9136 /* AccountPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPresenterTest.swift; sourceTree = "<group>"; };
-		56F8DBBF24490E3A00A184E0 /* MVVMSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVVMSwift.xcdatamodel; sourceTree = "<group>"; };
 		E0FED7DC1EA66A8E4BF6590B /* Pods_MVVMSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58579255806DA51FDD83877 /* Pods_MVVMSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -224,7 +224,7 @@
 				567151BD23D7AF5200694436 /* AccountService.swift */,
 				565BA89323D4D50B000D2DEF /* CoreDataManager.swift */,
 				567151CA23D7BE2B00694436 /* Account.swift */,
-				56F8DBBE24490E3A00A184E0 /* MVVMSwift.xcdatamodeld */,
+				56A0F1BE2887452300B39BC8 /* MVVMSwift.xcdatamodeld */,
 			);
 			name = "Data Models & Managers";
 			sourceTree = "<group>";
@@ -531,11 +531,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				567151CB23D7BE2B00694436 /* Account.swift in Sources */,
-				56F8DBC024490E3B00A184E0 /* MVVMSwift.xcdatamodeld in Sources */,
 				565BA82723D4BF13000D2DEF /* AppDelegate.swift in Sources */,
 				567151C423D7AFA800694436 /* AccountPresenter.swift in Sources */,
 				565BA88E23D4CB15000D2DEF /* NetworkManager.swift in Sources */,
 				567151C123D7AF5200694436 /* AccountDTO.swift in Sources */,
+				56A0F1C02887452300B39BC8 /* MVVMSwift.xcdatamodeld in Sources */,
 				565BA86D23D4C560000D2DEF /* AboutViewController.swift in Sources */,
 				567151C023D7AF5200694436 /* AccountService.swift in Sources */,
 				565BA89423D4D50B000D2DEF /* CoreDataManager.swift in Sources */,
@@ -883,12 +883,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		56F8DBBE24490E3A00A184E0 /* MVVMSwift.xcdatamodeld */ = {
+		56A0F1BE2887452300B39BC8 /* MVVMSwift.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				56F8DBBF24490E3A00A184E0 /* MVVMSwift.xcdatamodel */,
+				56A0F1BF2887452300B39BC8 /* MVPSwift.xcdatamodel */,
 			);
-			currentVersion = 56F8DBBF24490E3A00A184E0 /* MVVMSwift.xcdatamodel */;
+			currentVersion = 56A0F1BF2887452300B39BC8 /* MVPSwift.xcdatamodel */;
 			path = MVVMSwift.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

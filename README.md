@@ -2,7 +2,7 @@
 
 ## Description
 
-MVVMSwift is an example iOS App written in Swift about using MVP Pattern on iOS.
+MVVMSwift is an example iOS App written in Swift about using MVVM Pattern using Boxing on iOS.
 
 It includes also a CoreData persistance.
 
