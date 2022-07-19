@@ -31,6 +31,8 @@
 		56A0F1BD2887405700B39BC8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A0F1BC2887405700B39BC8 /* Colors.xcassets */; };
 		56A0F1C02887452300B39BC8 /* MVVMSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56A0F1BE2887452300B39BC8 /* MVVMSwift.xcdatamodeld */; };
 		56A0F1C3288745DD00B39BC8 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A0F1C2288745DD00B39BC8 /* Box.swift */; };
+		56A0F1C728874A3700B39BC8 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A0F1C628874A3700B39BC8 /* AccountViewModel.swift */; };
+		56A0F1C928874BFC00B39BC8 /* AccountViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A0F1C828874BFC00B39BC8 /* AccountViewData.swift */; };
 		56A3198C23D4E795001D5D6D /* accounts-test-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 56A3198B23D4E795001D5D6D /* accounts-test-data.json */; };
 		56A3198E23D4E7C7001D5D6D /* AcountServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3198D23D4E7C7001D5D6D /* AcountServiceTest.swift */; };
 		56A3199023D4E80D001D5D6D /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3198F23D4E80D001D5D6D /* MockNetworkManager.swift */; };
@@ -93,6 +95,8 @@
 		56A0F1BC2887405700B39BC8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		56A0F1BF2887452300B39BC8 /* MVPSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVPSwift.xcdatamodel; sourceTree = "<group>"; };
 		56A0F1C2288745DD00B39BC8 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		56A0F1C628874A3700B39BC8 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		56A0F1C828874BFC00B39BC8 /* AccountViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewData.swift; sourceTree = "<group>"; };
 		56A3198B23D4E795001D5D6D /* accounts-test-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "accounts-test-data.json"; sourceTree = "<group>"; };
 		56A3198D23D4E7C7001D5D6D /* AcountServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountServiceTest.swift; sourceTree = "<group>"; };
 		56A3198F23D4E80D001D5D6D /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
@@ -155,7 +159,9 @@
 			children = (
 				565BA82623D4BF13000D2DEF /* AppDelegate.swift */,
 				565BA87F23D4C787000D2DEF /* Resources */,
-				565BA88423D4C97C000D2DEF /* Data Models & Managers */,
+				565BA88423D4C97C000D2DEF /* Models */,
+				56A0F1C52887499000B39BC8 /* View Models */,
+				56A0F1C4288748F700B39BC8 /* Services & Managers */,
 				565BA88A23D4CAC6000D2DEF /* Backend Access */,
 				567151C523D7B03A00694436 /* Accounts */,
 				56A0F1C1288745C100B39BC8 /* Utilities */,
@@ -191,6 +197,7 @@
 		565BA85923D4BF72000D2DEF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				567151BF23D7AF5200694436 /* Accounts.json */,
 				565BA86623D4C399000D2DEF /* i18n.twine */,
 				565BA87523D4C6BC000D2DEF /* InfoPlist.strings */,
 				565BA87723D4C6BC000D2DEF /* Localizable.strings */,
@@ -219,17 +226,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		565BA88423D4C97C000D2DEF /* Data Models & Managers */ = {
+		565BA88423D4C97C000D2DEF /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				567151BE23D7AF5200694436 /* AccountDTO.swift */,
-				567151BF23D7AF5200694436 /* Accounts.json */,
-				567151BD23D7AF5200694436 /* AccountService.swift */,
-				565BA89323D4D50B000D2DEF /* CoreDataManager.swift */,
 				567151CA23D7BE2B00694436 /* Account.swift */,
-				56A0F1BE2887452300B39BC8 /* MVVMSwift.xcdatamodeld */,
+				56A0F1C828874BFC00B39BC8 /* AccountViewData.swift */,
 			);
-			name = "Data Models & Managers";
+			name = Models;
 			sourceTree = "<group>";
 		};
 		565BA88A23D4CAC6000D2DEF /* Backend Access */ = {
@@ -257,6 +261,24 @@
 				56A0F1C2288745DD00B39BC8 /* Box.swift */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		56A0F1C4288748F700B39BC8 /* Services & Managers */ = {
+			isa = PBXGroup;
+			children = (
+				567151BD23D7AF5200694436 /* AccountService.swift */,
+				565BA89323D4D50B000D2DEF /* CoreDataManager.swift */,
+				56A0F1BE2887452300B39BC8 /* MVVMSwift.xcdatamodeld */,
+			);
+			name = "Services & Managers";
+			sourceTree = "<group>";
+		};
+		56A0F1C52887499000B39BC8 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				56A0F1C628874A3700B39BC8 /* AccountViewModel.swift */,
+			);
+			name = "View Models";
 			sourceTree = "<group>";
 		};
 		C83A4ABB6EC5FC13AF4A46E5 /* Pods */ = {
@@ -542,6 +564,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				567151CB23D7BE2B00694436 /* Account.swift in Sources */,
+				56A0F1C728874A3700B39BC8 /* AccountViewModel.swift in Sources */,
+				56A0F1C928874BFC00B39BC8 /* AccountViewData.swift in Sources */,
 				56A0F1C3288745DD00B39BC8 /* Box.swift in Sources */,
 				565BA82723D4BF13000D2DEF /* AppDelegate.swift in Sources */,
 				567151C423D7AFA800694436 /* AccountPresenter.swift in Sources */,

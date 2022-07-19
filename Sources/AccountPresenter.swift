@@ -6,29 +6,7 @@
 //  Copyright (c) 2022 David Seca. All rights reserved.
 //
 
-// MARK: - AccountViewData
-/// AccountViewData to be displayed
-struct AccountViewData {
-    let number: String
-    let balance: String
-    let isVisible: Bool
-}
 
-extension AccountViewData {
-    fileprivate static func initialize(withAccount account: Account) -> AccountViewData {
-        return AccountViewData(number: "\(account.accountNumber)",
-                               balance: String(format: "%.2f",
-                               account.accountBalance),
-                               isVisible: account.isVisible)
-    }
-}
-
-// MARK: - AccountViewMode
-/// Views mode of accounts
-public enum AccountViewMode: Int {
-    case all
-    case visible
-}
 
 // MARK: - AccountViewDelegate
 /// AccountView Delegate
