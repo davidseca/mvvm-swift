@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.6.1)
+  - Alamofire (5.6.2)
   - SwiftGen (6.5.1)
 
 DEPENDENCIES:
@@ -12,7 +12,7 @@ SPEC REPOS:
     - SwiftGen
 
 SPEC CHECKSUMS:
-  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   SwiftGen: a6d22010845f08fe18fbdf3a07a8e380fd22e0ea
 
 PODFILE CHECKSUM: 93cbda4d6065f3fb60f840c01e070c897dac366a

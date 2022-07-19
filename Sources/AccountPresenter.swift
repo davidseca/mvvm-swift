@@ -32,7 +32,7 @@ public enum AccountViewMode: Int {
 
 // MARK: - AccountViewDelegate
 /// AccountView Delegate
-protocol AccountViewDelegate: class {
+protocol AccountViewDelegate: AnyObject {
 
     func accountsDidLoaded(accounts: [AccountViewData])
 
