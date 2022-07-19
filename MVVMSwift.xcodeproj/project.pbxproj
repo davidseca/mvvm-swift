@@ -28,6 +28,7 @@
 		567151C723D7B05200694436 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567151C623D7B05200694436 /* AccountsViewController.swift */; };
 		567151C923D7B42F00694436 /* AccountsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 567151C823D7B42F00694436 /* AccountsViewController.xib */; };
 		567151CB23D7BE2B00694436 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567151CA23D7BE2B00694436 /* Account.swift */; };
+		56A0F1BD2887405700B39BC8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A0F1BC2887405700B39BC8 /* Colors.xcassets */; };
 		56A3198C23D4E795001D5D6D /* accounts-test-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 56A3198B23D4E795001D5D6D /* accounts-test-data.json */; };
 		56A3198E23D4E7C7001D5D6D /* AcountServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3198D23D4E7C7001D5D6D /* AcountServiceTest.swift */; };
 		56A3199023D4E80D001D5D6D /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3198F23D4E80D001D5D6D /* MockNetworkManager.swift */; };
@@ -88,6 +89,7 @@
 		567151C623D7B05200694436 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		567151C823D7B42F00694436 /* AccountsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountsViewController.xib; sourceTree = "<group>"; };
 		567151CA23D7BE2B00694436 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		56A0F1BC2887405700B39BC8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		56A3198B23D4E795001D5D6D /* accounts-test-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "accounts-test-data.json"; sourceTree = "<group>"; };
 		56A3198D23D4E7C7001D5D6D /* AcountServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountServiceTest.swift; sourceTree = "<group>"; };
 		56A3198F23D4E80D001D5D6D /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				565BA86923D4C51B000D2DEF /* About */,
 				565BA85923D4BF72000D2DEF /* Supporting Files */,
 				565BA83223D4BF13000D2DEF /* Assets.xcassets */,
+				56A0F1BC2887405700B39BC8 /* Colors.xcassets */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56A0F1BD2887405700B39BC8 /* Colors.xcassets in Resources */,
 				565BA85B23D4BFBC000D2DEF /* LaunchScreen.xib in Resources */,
 				565BA87923D4C6BC000D2DEF /* InfoPlist.strings in Resources */,
 				565BA86723D4C399000D2DEF /* i18n.twine in Resources */,
@@ -478,7 +482,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "SWIFTGEN=\"$PODS_ROOT/SwiftGen/bin/swiftgen\"\nif which \"$SWIFTGEN\" > /dev/null; then\n    echo \"Using SwiftGen at $SWIFTGEN\"\n    \"$SWIFTGEN\" xcassets \"$PROJECT_DIR/Sources/Assets.xcassets\" -t swift4 --output \"$PROJECT_DIR/Sources/Assets.swift\"\n    \"$SWIFTGEN\" strings \"$PROJECT_DIR/Sources/en.lproj/Localizable.strings\" -t structured-swift4 --output \"$PROJECT_DIR/Sources/Strings.swift\"\nelse\n    echo \"error: SwiftGen not installed!\"\nfi\n";
+			shellScript = "$PROJECT_DIR/run-swiftgen.sh\n";
 		};
 		7DF568D3A6DAC3321FB69238 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
