@@ -30,6 +30,7 @@
 		567151CB23D7BE2B00694436 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567151CA23D7BE2B00694436 /* Account.swift */; };
 		56A0F1BD2887405700B39BC8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56A0F1BC2887405700B39BC8 /* Colors.xcassets */; };
 		56A0F1C02887452300B39BC8 /* MVVMSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56A0F1BE2887452300B39BC8 /* MVVMSwift.xcdatamodeld */; };
+		56A0F1C3288745DD00B39BC8 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A0F1C2288745DD00B39BC8 /* Box.swift */; };
 		56A3198C23D4E795001D5D6D /* accounts-test-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 56A3198B23D4E795001D5D6D /* accounts-test-data.json */; };
 		56A3198E23D4E7C7001D5D6D /* AcountServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3198D23D4E7C7001D5D6D /* AcountServiceTest.swift */; };
 		56A3199023D4E80D001D5D6D /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3198F23D4E80D001D5D6D /* MockNetworkManager.swift */; };
@@ -91,6 +92,7 @@
 		567151CA23D7BE2B00694436 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		56A0F1BC2887405700B39BC8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		56A0F1BF2887452300B39BC8 /* MVPSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVPSwift.xcdatamodel; sourceTree = "<group>"; };
+		56A0F1C2288745DD00B39BC8 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		56A3198B23D4E795001D5D6D /* accounts-test-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "accounts-test-data.json"; sourceTree = "<group>"; };
 		56A3198D23D4E7C7001D5D6D /* AcountServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountServiceTest.swift; sourceTree = "<group>"; };
 		56A3198F23D4E80D001D5D6D /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				565BA88423D4C97C000D2DEF /* Data Models & Managers */,
 				565BA88A23D4CAC6000D2DEF /* Backend Access */,
 				567151C523D7B03A00694436 /* Accounts */,
+				56A0F1C1288745C100B39BC8 /* Utilities */,
 				565BA86923D4C51B000D2DEF /* About */,
 				565BA85923D4BF72000D2DEF /* Supporting Files */,
 				565BA83223D4BF13000D2DEF /* Assets.xcassets */,
@@ -246,6 +249,14 @@
 				567151C823D7B42F00694436 /* AccountsViewController.xib */,
 			);
 			name = Accounts;
+			sourceTree = "<group>";
+		};
+		56A0F1C1288745C100B39BC8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				56A0F1C2288745DD00B39BC8 /* Box.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		C83A4ABB6EC5FC13AF4A46E5 /* Pods */ = {
@@ -531,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				567151CB23D7BE2B00694436 /* Account.swift in Sources */,
+				56A0F1C3288745DD00B39BC8 /* Box.swift in Sources */,
 				565BA82723D4BF13000D2DEF /* AppDelegate.swift in Sources */,
 				567151C423D7AFA800694436 /* AccountPresenter.swift in Sources */,
 				565BA88E23D4CB15000D2DEF /* NetworkManager.swift in Sources */,
