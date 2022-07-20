@@ -9,17 +9,21 @@
 import Foundation
 import CoreData
 
+/// Manager for packing CoreData persistence container
 public class CoreDataManager {
 
+    /// Private constructor
     private init() {}
 
+    /// Shared instance
     static let shared = CoreDataManager()
 
+    /// Context to manipulate and track changes to managed objects
     var context: NSManagedObjectContext {
         return persistentContainer.viewContext
     }
 
-
+    /// A container that encapsulates the Core Data stack in your app.
     private lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "MVVMSwift")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
@@ -31,6 +35,10 @@ public class CoreDataManager {
     }()
 
     // MARK: - CoreData Saving support
+
+    /// Attempts to commit unsaved changes to registered objects to the context’s parent store
+    /// - parameters:
+    ///    - completion: Completion callback
     private func save(completion: @escaping () -> Void) {
         if context.hasChanges {
             do {
@@ -44,6 +52,11 @@ public class CoreDataManager {
     }
 
     // MARK: - CoreData Fetching support
+
+    /// Fetch array of items of the specified type that meet the fetch request’s critieria through completion
+    /// - parameters:
+    ///    - type: Which properties to fetch
+    ///    - completion: Callback with array of items of the specified type that meet the fetch request’s critieria
     func fetch<T: NSManagedObject>(_ type: T.Type, completion: @escaping ([T]) -> Void) {
         let request = NSFetchRequest<T>(entityName: String(describing: type))
         do {
@@ -56,6 +69,10 @@ public class CoreDataManager {
     }
 
     // MARK: - CoreData Clearing support
+
+    /// Deletes objects in the SQLite persistent store without loading them into memory.
+    ///    - type: Which properties to delete
+    ///    - completion: Completion callback
     private func clear<T: NSManagedObject>(_ type: T.Type, completion: @escaping () -> Void) {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: type))
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
@@ -68,6 +85,11 @@ public class CoreDataManager {
     }
 
     // MARK: - CoreData Save and fetch
+
+    /// Dave and fetch and array of items of the specified type that meet the fetch request’s critieria through completion
+    /// - parameters:
+    ///   - type: Which properties to save and fetch
+    ///   - completion: Callback with array of items of the specified type that meet the fetch request’s critieria
     func saveAndFetch<T: NSManagedObject>(_ type: T.Type, completion: @escaping ([T]) -> Void) {
         self.clear(type) {
             self.save {
@@ -77,4 +99,5 @@ public class CoreDataManager {
             }
         }
     }
+    
 }

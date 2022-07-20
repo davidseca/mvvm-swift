@@ -8,18 +8,26 @@
 
 import Foundation
 
-/// Support Struct for recovering from failing parse items
+/// Support Struct for recovering from failing parse generic items
 struct FailableDecodable<Base : Decodable> : Decodable {
 
+    /// Decodable Object
     let base: Base?
 
+    /// Constructor throwable
+    ///  - parameters:
+    ///     - decoder: Decoder to extract base data from
     init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
         self.base = try? container.decode(Base.self)
     }
+
 }
 
+/// Data Transfer object for AccountService
 class AccountServiceDTO: Decodable {
+
+    // Just AccountService fields
     let failedAccountTypes: String
     let returnCode: String
     let accounts: [AccountDTO]
@@ -37,9 +45,13 @@ class AccountServiceDTO: Decodable {
         self.returnCode = try container.decode(String.self, forKey: .returnCode)
         self.accounts = try container.decode([FailableDecodable<AccountDTO>].self, forKey: .accounts).compactMap { $0.base }
     }
+
 }
 
+/// Data Transfer object for Account itself
 struct AccountDTO: Decodable {
+
+    // Just account fields
     let accountBalanceInCents: Int
     let accountCurrency: String
     let accountId: Int
@@ -54,4 +66,5 @@ struct AccountDTO: Decodable {
     let productType: Int?
     let savingsTargetReached: Int?
     let targetAmountInCents: Int?
+
 }

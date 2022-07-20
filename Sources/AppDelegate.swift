@@ -12,16 +12,13 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    /// window of App
+    lazy var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
+
+    /// App Tabbar
     fileprivate var tabBar = UITabBarController()
 
-    override init() {
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        super.init()
-    }
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
 
         self.setupTabBar()
 
@@ -31,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    ///  Set up needed for Tabbar
     private func setupTabBar() {
         let accounts = AccountsViewController()
         let accountsNavi = UINavigationController(rootViewController: accounts)

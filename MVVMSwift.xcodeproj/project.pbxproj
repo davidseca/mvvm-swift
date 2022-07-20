@@ -24,7 +24,6 @@
 		567151C023D7AF5200694436 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567151BD23D7AF5200694436 /* AccountService.swift */; };
 		567151C123D7AF5200694436 /* AccountDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567151BE23D7AF5200694436 /* AccountDTO.swift */; };
 		567151C223D7AF5200694436 /* Accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 567151BF23D7AF5200694436 /* Accounts.json */; };
-		567151C423D7AFA800694436 /* AccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567151C323D7AFA800694436 /* AccountPresenter.swift */; };
 		567151C723D7B05200694436 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567151C623D7B05200694436 /* AccountsViewController.swift */; };
 		567151C923D7B42F00694436 /* AccountsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 567151C823D7B42F00694436 /* AccountsViewController.xib */; };
 		567151CB23D7BE2B00694436 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567151CA23D7BE2B00694436 /* Account.swift */; };
@@ -88,7 +87,6 @@
 		567151BD23D7AF5200694436 /* AccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		567151BE23D7AF5200694436 /* AccountDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDTO.swift; sourceTree = "<group>"; };
 		567151BF23D7AF5200694436 /* Accounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Accounts.json; sourceTree = "<group>"; };
-		567151C323D7AFA800694436 /* AccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPresenter.swift; sourceTree = "<group>"; };
 		567151C623D7B05200694436 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		567151C823D7B42F00694436 /* AccountsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountsViewController.xib; sourceTree = "<group>"; };
 		567151CA23D7BE2B00694436 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
@@ -248,7 +246,6 @@
 		567151C523D7B03A00694436 /* Accounts */ = {
 			isa = PBXGroup;
 			children = (
-				567151C323D7AFA800694436 /* AccountPresenter.swift */,
 				567151C623D7B05200694436 /* AccountsViewController.swift */,
 				567151C823D7B42F00694436 /* AccountsViewController.xib */,
 			);
@@ -568,7 +565,6 @@
 				56A0F1C928874BFC00B39BC8 /* AccountViewData.swift in Sources */,
 				56A0F1C3288745DD00B39BC8 /* Box.swift in Sources */,
 				565BA82723D4BF13000D2DEF /* AppDelegate.swift in Sources */,
-				567151C423D7AFA800694436 /* AccountPresenter.swift in Sources */,
 				565BA88E23D4CB15000D2DEF /* NetworkManager.swift in Sources */,
 				567151C123D7AF5200694436 /* AccountDTO.swift in Sources */,
 				56A0F1C02887452300B39BC8 /* MVVMSwift.xcdatamodeld in Sources */,

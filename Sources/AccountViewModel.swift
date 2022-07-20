@@ -23,7 +23,7 @@ public class AccountViewModel {
     private var viewMode = AccountViewMode.all
 
     // MARK: - Boxes
-
+    
     /// Accounts Box
     let accountsBox = Box([AccountViewData]())
 

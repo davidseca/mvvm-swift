@@ -8,23 +8,23 @@
 
 import UIKit
 
+/// View Controller for Accounts
 class AccountsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var viewModeControl: UISegmentedControl!
 
-    private var presenter = AccountPresenter()
+    /// Account View Model
+    private let viewModel = AccountViewModel()
 
+    /// Just account Cell Indentifier
     fileprivate static let cellIdentifier = "accountCell"
 
-    /// current state of the UISegmentedControl
+    /// Current state of the UISegmentedControl
     private var viewMode = AccountViewMode.all
 
-    /// All accounts gotten when accountsDidLoaded
-    private var allAccounts = [AccountViewData]()
-
-    /// Accounts to be displayed. Will change in function of viewMode
-    private var accountsToDisplay = [AccountViewData]()
+    /// Accounts to display
+    private var accounts = [AccountViewData]()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -38,7 +38,6 @@ class AccountsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
 
         // mode control
         self.viewModeControl.setTitle(L10n.Accounts.ModeControl.all, forSegmentAt: 0)
@@ -49,18 +48,32 @@ class AccountsViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: AccountsViewController.cellIdentifier)
 
-        // Set presenter's delegate
-        self.presenter.set(delegate: self)
-
-        // Ready to init View UIs
-        self.presenter.initView()
+        // Bind ViewModel Boxes
+        self.bindViewModel()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         // Please load accounts
-        self.presenter.loadAccounts()
+        self.viewModel.loadAccounts()
+    }
+
+}
+
+// MARK: - Bind ViewModel Boxes
+extension AccountsViewController {
+
+    /// Bind ViewModel Boxes
+    private func bindViewModel() {
+        self.viewModel.accountsBox.bind { [weak self] accounts in
+            self?.accounts = accounts
+            self?.tableView.reloadData()
+        }
+
+        self.viewModel.viewModeBox.bind { [weak self] viewMode in
+            self?.viewModeControl.selectedSegmentIndex = viewMode.rawValue
+        }
     }
 
 }
@@ -69,7 +82,7 @@ class AccountsViewController: UIViewController {
 extension AccountsViewController {
 
     @IBAction func viewModeValueChanged(_ sender: UISegmentedControl) {
-        self.presenter.changeViewMode(rawValue: sender.selectedSegmentIndex)
+        self.viewModel.changeViewMode(rawValue: sender.selectedSegmentIndex)
     }
 
 }
@@ -83,7 +96,7 @@ extension AccountsViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.accountsToDisplay.count
+        return self.accounts.count
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -92,30 +105,9 @@ extension AccountsViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: AccountsViewController.cellIdentifier, for: indexPath)
-        let account = self.accountsToDisplay[indexPath.row]
+        let account = self.accounts[indexPath.row]
         cell.textLabel?.text = L10n.Accounts.Cell.info(account.number, account.balance)
         return cell
-    }
-
-}
-
-// MARK: - TransactionDelegate
-extension AccountsViewController: AccountViewDelegate {
-
-    func accountsDidLoaded(accounts: [AccountViewData]) {
-        self.allAccounts = accounts
-        self.presenter.filter(accounts: self.allAccounts, viewMode: self.viewMode)
-    }
-
-    func viewModeDidChanged(viewMode: AccountViewMode) {
-        self.viewModeControl.selectedSegmentIndex = viewMode.rawValue
-        self.viewMode = viewMode
-        self.presenter.filter(accounts: self.allAccounts, viewMode: self.viewMode)
-    }
-
-    func accountsDidFiltered(accounts: [AccountViewData]) {
-        self.accountsToDisplay = accounts
-        self.tableView.reloadData()
     }
 
 }

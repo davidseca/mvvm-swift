@@ -8,12 +8,16 @@
 
 import Foundation
 
+/// Account Service to fetch accounts
 public class AccountService {
 
+    /// Manager for packing CoreData persistence container
     private let persistence = CoreDataManager.shared
 
+    /// Low level Network service to get data from servers
     private var networkDelegate: NetworkManagerProtocol = NetworkManager.sharedInstance
 
+    /// Flag to indicate if service is loading accounts
     private var loading = false
 
     // NB: For testing purposes
@@ -22,6 +26,8 @@ public class AccountService {
     }
 
     /// Attems to load Accounts from API and persists them
+    /// - parameters:
+    ///   - completion: Completion with array of fetched accounts
     func loadIfNeeded(completion: @escaping ([Account])->()) {
         if !self.loading {
             self.loading = true
@@ -60,4 +66,5 @@ public class AccountService {
             }
         }
     }
+    
 }

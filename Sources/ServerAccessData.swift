@@ -8,9 +8,11 @@
 
 import Foundation
 
-// TODO: If needed add ServerConfiguration enum for ex. test, production, staging,... enviroments
-// hard-coded initial endpoints
+/// Hard-coded initial endpoints
 enum BankAPI {
+
+    // TODO: If needed add ServerConfiguration enum for ex. test, production, staging,... enviroments
+
     case accounts
 
     var url: String {
